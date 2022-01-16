@@ -1,0 +1,271 @@
+* 
+* This is automatically generated file with optimized delays for DDR3/LPDDR3/DDR4/LPDDR4 technologies.
+* When applied on WriteLeveling page of the DDRx Wizard it minimizes skews for the strobe nets  and setup/hold time skews for the DQ/DM nets (and for CA nets in LPDDR3/LPDDR4).
+
+* Example: 
+* Net: DQ1  Delay: 0.334  Skew: -0.078  SimCase: W2  Corner: Fast  
+* where: 
+*    DQ1 is a net name
+*    0.334 is a recommended initial delay in ns, absolute value. For data nets it includes delay changes in the strobe net also.
+*    -0.078 is a recommended relative change for the initial delay comparing to defined in timing files.
+*    W2 corresponds to {Writing to Slot 2} simulation. It can be W1, W2, etc for writing to Slot1, Slot2, etc. Or it can be R(1,1), R(1,2), R(2, 1), etc, for reading from (Slot1, Rank1), etc, simulations.
+*    Fast corresponds to the model corner. It can be Fast, Typ, Slow. It can be also ALL or All. In this case it will be applied to all the model corners used for simulations. 
+
+*Comments for DQS nets:
+*   current delay: absolute delay value for this net in simulation that was run;
+*   average skew: average DQS/CLK skew calculated for this net in simulation that was run;
+*   prev skew (if defined): already defined initial skew for this net in simuation that was run, i.e. difference between current delay and delay from timing files;
+*   new delay = current delay - average skew;
+*   new skew = average skew + prev skew (if defined);
+
+*Comments for DQ nets:
+*   current delay: absolute delay value for this net in simulation that was run
+*   stb skew: average skew calculated for its strobe net in simulation that was run
+*   local skew: (Minimum Hold time - Minimum Setup time) / 2  for this net in simulation that was run
+*   prev local skew (if defined): already defined initial skew for this net in simuation that was run
+*   new delay = current delay - ( stb skew + local skew );
+*   new skew = local skew + prev local skew (if defined);
+* 
+
+
+***
+*** current delay: 1.142, average skew: -0.000, prev local skew: -0.673; 
+Net: DRAM_DQS0_P  Skew: -0.673  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.899, stb skew: -0.000, local skew: -0.000, prev local skew: 0.008 
+Net: DRAM_D0  Skew: 0.008  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.898, stb skew: -0.000, local skew: 0.001, prev local skew: 0.009 
+Net: DRAM_D1  Skew: 0.010  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.909, stb skew: -0.000, local skew: 0.000, prev local skew: -0.002 
+Net: DRAM_D2  Skew: -0.002  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.923, stb skew: -0.000, local skew: -0.000, prev local skew: -0.016 
+Net: DRAM_D3  Skew: -0.016  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.905, stb skew: -0.000, local skew: -0.000, prev local skew: 0.002 
+Net: DRAM_D4  Skew: 0.002  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.903, stb skew: -0.000, local skew: 0.000, prev local skew: 0.004 
+Net: DRAM_D5  Skew: 0.004  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.916, stb skew: -0.000, local skew: -0.000, prev local skew: -0.009 
+Net: DRAM_D6  Skew: -0.009  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.906, stb skew: -0.000, local skew: -0.000, prev local skew: 0.001 
+Net: DRAM_D7  Skew: 0.001  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.912, stb skew: -0.000, local skew: 0.000, prev local skew: -0.005 
+Net: DRAM_DQM0  Skew: -0.005  SimCase: W1  Corner: Typ 
+***
+*** current delay: 1.148, average skew: -0.000, prev local skew: -0.679; 
+Net: DRAM_DQS1_P  Skew: -0.679  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.953, stb skew: -0.000, local skew: -0.000, prev local skew: -0.039 
+Net: DRAM_D10  Skew: -0.039  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.931, stb skew: -0.000, local skew: -0.000, prev local skew: -0.017 
+Net: DRAM_D11  Skew: -0.017  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.940, stb skew: -0.000, local skew: -0.000, prev local skew: -0.026 
+Net: DRAM_D12  Skew: -0.026  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.939, stb skew: -0.000, local skew: 0.000, prev local skew: -0.025 
+Net: DRAM_D13  Skew: -0.025  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.952, stb skew: -0.000, local skew: -0.000, prev local skew: -0.038 
+Net: DRAM_D14  Skew: -0.038  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.944, stb skew: -0.000, local skew: 0.000, prev local skew: -0.030 
+Net: DRAM_D15  Skew: -0.030  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.921, stb skew: -0.000, local skew: -0.000, prev local skew: -0.007 
+Net: DRAM_D8  Skew: -0.007  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.919, stb skew: -0.000, local skew: 0.000, prev local skew: -0.005 
+Net: DRAM_D9  Skew: -0.005  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.934, stb skew: -0.000, local skew: 0.000, prev local skew: -0.020 
+Net: DRAM_DQM1  Skew: -0.020  SimCase: W1  Corner: Typ 
+***
+*** current delay: 1.025, average skew: -0.000, prev local skew: -0.556; 
+Net: DRAM_DQS2_P  Skew: -0.556  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.799, stb skew: -0.000, local skew: -0.000, prev local skew: -0.009 
+Net: DRAM_D16  Skew: -0.009  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.799, stb skew: -0.000, local skew: 0.000, prev local skew: -0.009 
+Net: DRAM_D17  Skew: -0.009  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.795, stb skew: -0.000, local skew: -0.000, prev local skew: -0.005 
+Net: DRAM_D18  Skew: -0.005  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.805, stb skew: -0.000, local skew: -0.000, prev local skew: -0.015 
+Net: DRAM_D19  Skew: -0.015  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.810, stb skew: -0.000, local skew: 0.000, prev local skew: -0.020 
+Net: DRAM_D20  Skew: -0.020  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.809, stb skew: -0.000, local skew: -0.000, prev local skew: -0.019 
+Net: DRAM_D21  Skew: -0.019  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.803, stb skew: -0.000, local skew: -0.000, prev local skew: -0.013 
+Net: DRAM_D22  Skew: -0.013  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.800, stb skew: -0.000, local skew: -0.000, prev local skew: -0.010 
+Net: DRAM_D23  Skew: -0.010  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.804, stb skew: -0.000, local skew: -0.000, prev local skew: -0.014 
+Net: DRAM_DQM2  Skew: -0.014  SimCase: W1  Corner: Typ 
+***
+*** current delay: 1.054, average skew: -0.000, prev local skew: -0.585; 
+Net: DRAM_DQS3_P  Skew: -0.585  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.792, stb skew: -0.000, local skew: 0.000, prev local skew: 0.027 
+Net: DRAM_D24  Skew: 0.027  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.835, stb skew: -0.000, local skew: -0.000, prev local skew: -0.016 
+Net: DRAM_D25  Skew: -0.016  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.804, stb skew: -0.000, local skew: -0.000, prev local skew: 0.015 
+Net: DRAM_D26  Skew: 0.015  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.825, stb skew: -0.000, local skew: -0.001, prev local skew: -0.006 
+Net: DRAM_D27  Skew: -0.007  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.806, stb skew: -0.000, local skew: -0.000, prev local skew: 0.013 
+Net: DRAM_D28  Skew: 0.013  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.808, stb skew: -0.000, local skew: 0.000, prev local skew: 0.011 
+Net: DRAM_D29  Skew: 0.011  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.808, stb skew: -0.000, local skew: 0.000, prev local skew: 0.011 
+Net: DRAM_D30  Skew: 0.011  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.815, stb skew: -0.000, local skew: -0.000, prev local skew: 0.004 
+Net: DRAM_D31  Skew: 0.004  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.792, stb skew: -0.000, local skew: -0.000, prev local skew: 0.027 
+Net: DRAM_DQM3  Skew: 0.027  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.892, average skew: -0.000, prev local skew: -0.423; 
+Net: DRAM_DQS4_P  Skew: -0.423  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.678, stb skew: -0.000, local skew: 0.000, prev local skew: -0.020 
+Net: DRAM_D32  Skew: -0.020  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.674, stb skew: -0.000, local skew: -0.000, prev local skew: -0.016 
+Net: DRAM_D33  Skew: -0.016  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.667, stb skew: -0.000, local skew: 0.000, prev local skew: -0.009 
+Net: DRAM_D34  Skew: -0.009  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.654, stb skew: -0.000, local skew: 0.000, prev local skew: 0.004 
+Net: DRAM_D35  Skew: 0.004  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.682, stb skew: -0.000, local skew: -0.000, prev local skew: -0.024 
+Net: DRAM_D36  Skew: -0.024  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.681, stb skew: -0.000, local skew: -0.000, prev local skew: -0.023 
+Net: DRAM_D37  Skew: -0.023  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.681, stb skew: -0.000, local skew: 0.000, prev local skew: -0.023 
+Net: DRAM_D38  Skew: -0.023  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.674, stb skew: -0.000, local skew: -0.000, prev local skew: -0.016 
+Net: DRAM_D39  Skew: -0.016  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.677, stb skew: -0.000, local skew: -0.000, prev local skew: -0.019 
+Net: DRAM_DQM4  Skew: -0.019  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.893, average skew: -0.000, prev local skew: -0.424; 
+Net: DRAM_DQS5_P  Skew: -0.424  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.663, stb skew: -0.000, local skew: 0.000, prev local skew: -0.005 
+Net: DRAM_D40  Skew: -0.005  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.668, stb skew: -0.000, local skew: -0.000, prev local skew: -0.010 
+Net: DRAM_D41  Skew: -0.010  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.670, stb skew: -0.000, local skew: -0.000, prev local skew: -0.012 
+Net: DRAM_D42  Skew: -0.012  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.659, stb skew: -0.000, local skew: -0.000, prev local skew: -0.001 
+Net: DRAM_D43  Skew: -0.001  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.677, stb skew: -0.000, local skew: 0.000, prev local skew: -0.019 
+Net: DRAM_D44  Skew: -0.019  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.671, stb skew: -0.000, local skew: 0.000, prev local skew: -0.013 
+Net: DRAM_D45  Skew: -0.013  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.654, stb skew: -0.000, local skew: -0.000, prev local skew: 0.004 
+Net: DRAM_D46  Skew: 0.004  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.661, stb skew: -0.000, local skew: 0.000, prev local skew: -0.003 
+Net: DRAM_D47  Skew: -0.003  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.656, stb skew: -0.000, local skew: -0.000, prev local skew: 0.002 
+Net: DRAM_DQM5  Skew: 0.002  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.736, average skew: 0.000, prev local skew: -0.267; 
+Net: DRAM_DQS6_P  Skew: -0.267  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.504, stb skew: 0.000, local skew: 0.000, prev local skew: -0.003 
+Net: DRAM_D48  Skew: -0.003  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.495, stb skew: 0.000, local skew: 0.000, prev local skew: 0.006 
+Net: DRAM_D49  Skew: 0.006  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.482, stb skew: 0.000, local skew: 0.000, prev local skew: 0.019 
+Net: DRAM_D50  Skew: 0.019  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.494, stb skew: 0.000, local skew: -0.000, prev local skew: 0.007 
+Net: DRAM_D51  Skew: 0.007  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.512, stb skew: 0.000, local skew: -0.000, prev local skew: -0.011 
+Net: DRAM_D52  Skew: -0.011  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.495, stb skew: 0.000, local skew: -0.000, prev local skew: 0.006 
+Net: DRAM_D53  Skew: 0.006  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.479, stb skew: 0.000, local skew: -0.000, prev local skew: 0.022 
+Net: DRAM_D54  Skew: 0.022  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.485, stb skew: 0.000, local skew: 0.000, prev local skew: 0.016 
+Net: DRAM_D55  Skew: 0.016  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.489, stb skew: 0.000, local skew: 0.000, prev local skew: 0.012 
+Net: DRAM_DQM6  Skew: 0.012  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.770, average skew: 0.000, prev local skew: -0.301; 
+Net: DRAM_DQS7_P  Skew: -0.301  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.525, stb skew: 0.000, local skew: 0.000, prev local skew: 0.010 
+Net: DRAM_D56  Skew: 0.010  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.551, stb skew: 0.000, local skew: -0.000, prev local skew: -0.016 
+Net: DRAM_D57  Skew: -0.016  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.545, stb skew: 0.000, local skew: 0.000, prev local skew: -0.010 
+Net: DRAM_D58  Skew: -0.010  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.558, stb skew: 0.000, local skew: 0.000, prev local skew: -0.023 
+Net: DRAM_D59  Skew: -0.023  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.545, stb skew: 0.000, local skew: 0.000, prev local skew: -0.010 
+Net: DRAM_D60  Skew: -0.010  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.554, stb skew: 0.000, local skew: 0.000, prev local skew: -0.019 
+Net: DRAM_D61  Skew: -0.019  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.552, stb skew: 0.000, local skew: 0.000, prev local skew: -0.017 
+Net: DRAM_D62  Skew: -0.017  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.545, stb skew: 0.000, local skew: 0.000, prev local skew: -0.010 
+Net: DRAM_D63  Skew: -0.010  SimCase: W1  Corner: Typ 
+***
+*** current delay: 0.543, stb skew: 0.000, local skew: -0.000, prev local skew: -0.008 
+Net: DRAM_DQM7  Skew: -0.008  SimCase: W1  Corner: Typ 
+
